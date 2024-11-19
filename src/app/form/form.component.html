@@ -1,0 +1,14 @@
+<form [formGroup]="articleForm" (ngSubmit)="onSubmit()">
+  <label for="brand">Marca:</label>
+  <input id="brand" formControlName="brand">
+
+  <label for="model">Modelo:</label>
+  <input id="model" formControlName="model">
+
+  <label for="stock">Stock:</label>
+  <input id="stock" formControlName="stock">
+
+  <button type="submit">Guardar</button>
+</form>
+
+<button routerLink="/table">Ver Tabla</button> 

@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Stock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let article of articles">
+      <td>{{ article.brand }}</td>
+      <td>{{ article.model }}</td>
+      <td>{{ article.stock }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<button routerLink="/form">Agregar Nuevo Artículo</button> 
